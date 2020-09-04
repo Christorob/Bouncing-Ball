@@ -1,6 +1,6 @@
 float xSize = 1000, ySize = 1000;
-float xBall = 128, yBall = 64; 
-float xSpeed = 4.1, ySpeed = 4.1;
+float xBall = 128, yBall = 32; 
+float xSpeed = 4, ySpeed = 4;
 float boundary = 1;
 
 float r = 255;
@@ -31,7 +31,7 @@ void draw(){
   rect(512, 512, xSize, ySize);
     xSize *= boundary;
     ySize *= boundary;
-    boundary *= 0.99999;
+    boundary *= 0.999995;
     
   if(xSize <= 0){xSize = 0;}
   if(ySize <= 0){ySize = 0;}
