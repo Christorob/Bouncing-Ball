@@ -31,11 +31,11 @@ void draw(){
 
 //Collision
 
-if(xBall-12 > (width - boundary/2) || xBall < boundary/2){
+if((xBall) > (width - boundary) || xBall < boundary/2){
   xSpeed = xSpeed * -1;
   }
   
-  if(yBall-12 > (width - boundary/2) || yBall < boundary/2){
+  if((yBall) > (height - boundary) || yBall < boundary/2){
   ySpeed = ySpeed * -1;
   }
   
