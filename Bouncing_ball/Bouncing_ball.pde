@@ -37,28 +37,28 @@ void draw(){
   if(ySize <= 0){ySize = 0;}
 
 //Collision
-  if(xBall > width/2 + xSize/2){
+  if((xBall) > width/2 + xSize/2){
     xSpeed *= -1;
 r = random(255);  
 g = random(255);
 b = random(255);
 }  
     
-  if(yBall > width/2 + xSize/2){
+  if((yBall) > height/2 + xSize/2){
     ySpeed *= -1;
 r = random(255);  
 g = random(255);
 b = random(255);  
 }
   
-  if(xBall < width/2 - xSize/2){
+  if((xBall) < width/2 - xSize/2){
     xSpeed *= -1;
 r = random(255);  
 g = random(255);
 b = random(255);  
 }
   
-  if(yBall < width/2 - xSize/2){
+  if((yBall) < height/2 - xSize/2){
     ySpeed *= -1;
 r = random(255);  
 g = random(255);
@@ -78,11 +78,4 @@ b = random(255);
   if(yBall < height/2-ySize/2){
     yBall= height/2-ySize/2;}
   
-}
-
-
-
-
-
-  
-  
+}  
